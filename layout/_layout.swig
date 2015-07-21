@@ -3,10 +3,10 @@
 <head>
     {% include '_partials/head.swig' %}
     <title>{% block title %}{% endblock %}</title>
+    {% include '_scripts/analytics.swig' %}
 </head>
 <body itemscope itemtype="http://schema.org/WebPage" lang="{{ config.language }}">
 {% include '_partials/old-browsers.swig' %}
-{% include '_scripts/analytics.swig' %}
 
 <div class="container one-column {% block page_class %}{% endblock %}">
     <div class="headband"></div>
